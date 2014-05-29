@@ -4,7 +4,9 @@ from mergehdr import *
 
 if __name__=="__main__":
     # Options for capture
-    exposure
+    emin = 10
+    emax = 90
+    nexp = 4
     # Options for merging
     # nothing yet
     # Options for ffmpeg
