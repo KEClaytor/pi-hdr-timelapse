@@ -13,8 +13,8 @@ def CaptureHDRStack(camera, exposure_min, exposure_max, nimages):
         Returns a list of filenames of images saved.
     """
 
-    exp_step = (exposure_max - exposure_min) / nimages
-    exposures = range(exposure_min, exposure_max, exp_step)
+    exp_step = (exposure_max - exposure_min) / (nimages-1)
+    exposures = range(exposure_min, exposure_max+1, exp_step)
     fnames = []
     for step in exposures:
         # Set filename based on exposure
@@ -35,3 +35,5 @@ def WriteResponseFile(fnames):
     f.close()
     return True
 
+if __name__=="__main__":
+    pass
