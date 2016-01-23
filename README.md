@@ -6,10 +6,10 @@ Python scripts for capturing and merging HDR images on the Raspberry Pi and stri
 
 Installation
 ------------
-You'll need [picamera](https://pypi.python.org/pypi/picamera/) [git source](https://github.com/waveform80/picamera/) and [enblend/enfuse](http://enblend.sourceforge.net/).
+You'll need [picamera](https://pypi.python.org/pypi/picamera/) ([git source](https://github.com/waveform80/picamera/)) for managing the camera, [enblend/enfuse](http://enblend.sourceforge.net/) to generate the HDR images and [avconv](https://libav.org/avconv.html) to generate the movie from the images.
 ```
 sudo apt-get update
-sudo apt-get install python-picamera enblend
+sudo apt-get install python-picamera enblend libav-tools
 ```
 Then grab these files;
 ```
