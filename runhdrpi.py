@@ -47,6 +47,6 @@ if __name__=="__main__":
         sleep(delay)
 
     # Create the time lapse
-    call(["avconv", "-r", "10", "-i", "%s_%%04d.jpg" % (basename), "-r", "10","-vcodec", "libx264","-crf",  "20", "-g", "15", timelapsename])
+    call(["avconv", "-r", "10", "-i", "%s_%04d.jpg" % (basename), "-vcodec", "libx264", "-crf",  "20", "-g", "15", timelapsename])
     f.write('Wrote video\n.')
     f.write('Current Time: ' + datetime.now().isoformat())
